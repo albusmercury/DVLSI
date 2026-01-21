@@ -1,0 +1,46 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS-threadsafe
+#  -string -flagsOSRD
+preplace port new_image -pg 1 -y 580 -defaultsOSRD
+preplace port image_finished -pg 1 -y 500 -defaultsOSRD
+preplace port rst -pg 1 -y 460 -defaultsOSRD
+preplace port valid_in -pg 1 -y 600 -defaultsOSRD
+preplace port clk -pg 1 -y 440 -defaultsOSRD
+preplace port valid_out -pg 1 -y 480 -defaultsOSRD
+preplace portBus B -pg 1 -y 130 -defaultsOSRD
+preplace portBus R -pg 1 -y 90 -defaultsOSRD
+preplace portBus G -pg 1 -y 110 -defaultsOSRD
+preplace portBus pixel -pg 1 -y 420 -defaultsOSRD
+preplace inst calc_part_0 -pg 1 -lvl 2 -y 110 -defaultsOSRD
+preplace inst fsm_0 -pg 1 -lvl 1 -y 570 -defaultsOSRD
+preplace inst fifo_generator_0 -pg 1 -lvl 2 -y 640 -defaultsOSRD
+preplace inst fifo_generator_1 -pg 1 -lvl 2 -y 900 -defaultsOSRD
+preplace inst fifo_generator_2 -pg 1 -lvl 2 -y 340 -defaultsOSRD
+preplace netloc pixel_1 1 0 2 NJ 420 390J
+preplace netloc calc_part_0_R 1 2 1 NJ
+preplace netloc new_image_1 1 0 1 NJ
+preplace netloc rst_1 1 0 2 10 410 330
+preplace netloc fifo_generator_2_dout 1 1 1 420
+preplace netloc fsm_0_wr_en1 1 1 1 N
+preplace netloc calc_part_0_G 1 2 1 NJ
+preplace netloc valid_in_1 1 0 1 NJ
+preplace netloc fsm_0_wr_en2 1 1 1 310
+preplace netloc fsm_0_wr_en3 1 1 1 360
+preplace netloc fsm_0_rd_en1 1 1 1 340
+preplace netloc fsm_0_valid_out 1 1 2 340J 480 NJ
+preplace netloc fsm_0_rd_en2 1 1 1 320
+preplace netloc fifo_generator_0_dout 1 1 1 400
+preplace netloc fsm_0_image_finished 1 1 2 380J 500 NJ
+preplace netloc fsm_0_rd_en3 1 1 1 370
+preplace netloc fsm_0_counter_out 1 1 1 320
+preplace netloc fifo_generator_1_dout 1 1 1 410
+preplace netloc Net 1 0 2 20 430 350
+preplace netloc calc_part_0_B 1 2 1 NJ
+levelinfo -pg 1 -10 170 570 740 -top 0 -bot 1040
+",
+}
+{
+   da_board_cnt: "5",
+   da_clkrst_cnt: "2",
+}

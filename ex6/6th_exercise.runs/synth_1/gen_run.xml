@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685510237">
+  <File Type="PA-TCL" Name="debayering_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="debayering_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="debayering_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="debayering_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="debayering_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="debayering_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="debayering_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="debayering_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="debayering_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/misc_definitions.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calc_color.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/dff_matrix.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/calc_part.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fsm.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/debayering/debayering.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/debayering/hdl/debayering_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="debayering_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="debayering_calc_part_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="debayering_fifo_generator_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="debayering_fsm_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="debayering_fifo_generator_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="debayering_fifo_generator_0_0"/>
+</GenRun>

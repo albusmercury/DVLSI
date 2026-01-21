@@ -1,0 +1,34 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto ae27c7de673548dd945c15a8b738ae42 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot sim_debayering_behav xil_defaultlib.sim_debayering xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package xil_defaultlib.misc_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture dff_matrix of entity xil_defaultlib.dff_matrix [dff_matrix_default]
+Compiling architecture calc_color of entity xil_defaultlib.calc_color [calc_color_default]
+Compiling architecture calc_part of entity xil_defaultlib.calc_part [calc_part_default]
+Compiling architecture debayering_calc_part_0_0_arch of entity xil_defaultlib.debayering_calc_part_0_0 [debayering_calc_part_0_0_default]
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_bhv_ver_s...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2_CONV_VER(...
+Compiling module fifo_generator_v13_2_2.fifo_generator_vlog_beh(C_COMMON...
+Compiling module fifo_generator_v13_2_2.fifo_generator_v13_2_2(C_COMMON_...
+Compiling module xil_defaultlib.debayering_fifo_generator_0_0
+Compiling module xil_defaultlib.debayering_fifo_generator_0_1
+Compiling module xil_defaultlib.debayering_fifo_generator_0_2
+Compiling architecture fsm of entity xil_defaultlib.fsm [fsm_default]
+Compiling architecture debayering_fsm_0_0_arch of entity xil_defaultlib.debayering_fsm_0_0 [debayering_fsm_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.debayering [debayering_default]
+Compiling architecture structure of entity xil_defaultlib.debayering_wrapper [debayering_wrapper_default]
+Compiling architecture sim_debayering of entity xil_defaultlib.sim_debayering
+Built simulation snapshot sim_debayering_behav

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May  8 13:59:05 2023
+# Process ID: 1652
+# Current directory: C:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.runs/fpga_rst_ps7_0_100M_0_synth_1
+# Command line: vivado.exe -log fpga_rst_ps7_0_100M_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_rst_ps7_0_100M_0.tcl
+# Log file: C:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.runs/fpga_rst_ps7_0_100M_0_synth_1/fpga_rst_ps7_0_100M_0.vds
+# Journal file: C:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.runs/fpga_rst_ps7_0_100M_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fpga_rst_ps7_0_100M_0.tcl -notrace

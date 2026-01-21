@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat May 27 16:19:02 2023
+# Process ID: 18912
+# Current directory: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fsm_0_0_synth_1
+# Command line: vivado.exe -log debayering_fsm_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source debayering_fsm_0_0.tcl
+# Log file: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fsm_0_0_synth_1/debayering_fsm_0_0.vds
+# Journal file: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fsm_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source debayering_fsm_0_0.tcl -notrace

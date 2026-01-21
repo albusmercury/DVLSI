@@ -1,0 +1,64 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <sleep.h>
+#include <stdio.h>
+#include <stdint.h>
+
+#define A 	(uint32_t*) 0x43C00000
+#define B 	(uint32_t*) 0x43C10000
+
+uint16_t imp_resp[] = {1, 2, 3, 4, 5, 6, 7, 8};
+uint8_t x, y, valid_out;
+#define RST 9
+#define VALID_IN 8
+#define VALID_OUT 18
+
+uint32_t prev[8];
+uint32_t expected;
+int main()
+{
+    init_platform();
+
+    // Init prev values to zero
+    for(int i = 0; i < 8; i++){
+		prev[i] = 0;
+	}
+
+    A = 1 << RST;
+    usleep(1000000);
+    while(1){
+    	// Shift values
+    	for(int i = 1; i < 8; i++){
+    		prev[i-1] = prev[i];
+    	}
+    	x = 1;
+    	prev[7] = x
+
+
+    	// Send next input
+    	A = (1 << VALID_IN) | x;
+    	usleep(1000);
+    	A = 0;
+
+    	printf("Sent %d", x);
+
+    	// Wait till valid_out = 1
+    	valid_out = B >> VALID_OUT;
+    	while(!valid_out){
+    		valid_out = B >> VALID_OUT;
+    	}
+    	y = B & 0x3ff;
+
+    	// Calculate expected value
+    	expected = 0;
+    	for(int i = 0; i < 8; i++){
+    		expected += imp_resp[i]*prev[7 - i];
+    	}
+    	printf("Received %d and expected %d", (int)y, (int)expected);
+    	usleep(200000);
+    }
+
+    cleanup_platform();
+    return 0;
+}

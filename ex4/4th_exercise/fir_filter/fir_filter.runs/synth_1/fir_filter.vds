@@ -1,0 +1,350 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May  8 13:03:40 2023
+# Process ID: 9364
+# Current directory: C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.runs/synth_1
+# Command line: vivado.exe -log fir_filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_filter.tcl
+# Log file: C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.runs/synth_1/fir_filter.vds
+# Journal file: C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source fir_filter.tcl -notrace
+Command: synth_design -top fir_filter -part xc7z007sclg225-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13048 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 382.621 ; gain = 96.840
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fir_filter' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:17]
+	Parameter data_width bound to: 8 - type: integer 
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cu' of component 'control_unit' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:16]
+	Parameter data_width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'last' is read in the process but is not in the sensitivity list [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (1#1) [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:16]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_ram' declared at 'C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/ram.vhd:5' bound to instance 'ram' of component 'mlab_ram' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'mlab_ram' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/ram.vhd:18]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_ram' (2#1) [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/ram.vhd:18]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mlab_rom' declared at 'C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/rom.vhd:6' bound to instance 'rom' of component 'mlab_rom' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'mlab_rom' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/rom.vhd:17]
+	Parameter coeff_width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mlab_rom' (3#1) [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/rom.vhd:17]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mac' declared at 'C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/mac.vhd:7' bound to instance 'mac_comp' of component 'mac' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'mac' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/mac.vhd:19]
+	Parameter data_width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'rom_out' is read in the process but is not in the sensitivity list [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/mac.vhd:29]
+WARNING: [Synth 8-614] signal 'ram_out' is read in the process but is not in the sensitivity list [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/mac.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'mac' (4#1) [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/mac.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'fir_filter' (5#1) [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/fir_filter.vhd:17]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 437.508 ; gain = 151.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 437.508 ; gain = 151.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg225-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 437.508 ; gain = 151.727
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg225-2
+INFO: [Synth 8-5544] ROM "rom" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'ram_en_reg' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 437.508 ; gain = 151.727
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               19 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module control_unit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 11    
+Module mlab_ram 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	               64 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module mlab_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+Module mac 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (cu/ram_en_reg) is unused and will be removed from module fir_filter.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'cu/ram_en_reg/Q' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:22]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'VCC' [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:22]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.srcs/sources_1/new/control_unit.vhd:22]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 582.340 ; gain = 296.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|fir_filter  | ram/RAM_reg | Implied   | 8 x 8                | RAM16X1S x 8   | 
++------------+-------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 582.340 ; gain = 296.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-------------+-----------+----------------------+----------------+
+|Module Name | RTL Object  | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------+-----------+----------------------+----------------+
+|fir_filter  | ram/RAM_reg | Implied   | 8 x 8                | RAM16X1S x 8   | 
++------------+-------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |     8|
+|3     |LUT1     |     2|
+|4     |LUT2     |    40|
+|5     |LUT3     |    38|
+|6     |LUT4     |    35|
+|7     |LUT5     |    10|
+|8     |LUT6     |    26|
+|9     |RAM16X1S |     8|
+|10    |FDCE     |    25|
+|11    |FDPE     |    16|
+|12    |FDRE     |    22|
+|13    |LDC      |    15|
+|14    |IBUF     |    11|
+|15    |OBUF     |    20|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------+-------------+------+
+|      |Instance   |Module       |Cells |
++------+-----------+-------------+------+
+|1     |top        |             |   277|
+|2     |  cu       |control_unit |    93|
+|3     |  mac_comp |mac          |    87|
+|4     |  ram      |mlab_ram     |    35|
+|5     |  rom      |mlab_rom     |    30|
++------+-----------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 583.141 ; gain = 297.359
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 42 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  LDC => LDCE: 15 instances
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 5 Warnings, 3 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 685.016 ; gain = 412.082
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mpres/Desktop/4th_exercise/4th_exercise/fir_filter/fir_filter.runs/synth_1/fir_filter.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_filter_utilization_synth.rpt -pb fir_filter_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 685.016 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon May  8 13:04:04 2023...

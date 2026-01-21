@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"sim_debayering_func_synth.vhd" \
+"../../../../../6th_exercise.srcs/sim_1/new/sim_debayering.vhd" \
+
+# Do not sort compile order
+nosort

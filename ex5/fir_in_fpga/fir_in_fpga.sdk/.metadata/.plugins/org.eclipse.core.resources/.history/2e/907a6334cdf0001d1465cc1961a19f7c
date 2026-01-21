@@ -1,0 +1,75 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include <sleep.h>
+#include <stdio.h>
+#include <stdint.h>
+
+#define A 	0x43C00000
+#define B 	0x43C00004
+#define C 	0x43C00008
+
+uint16_t imp_resp[] = {1, 2, 3, 4, 5, 6, 7, 8};
+uint32_t x, y, valid_out;
+#define RST 9
+#define VALID_IN 8
+#define VALID_OUT 18
+
+//(x"A7", x"09", x"d9", x"ef", x"ad", x"c1", x"be", x"64", x"a7", x"2b", x"b4", x"08", x"46", x"0b");
+uint8_t counter = 0;
+uint8_t x_vals[] = {0xa7, 0x9, 0xd9, 0xef, 0xad, 0xc1, 0xbe, 0x64, 0xa7, 0x2b, 0xb4, 0x8, 0x46, 0xb};
+
+uint32_t prev[8];
+uint32_t expected;
+int main()
+{
+    init_platform();
+
+    xil_printf("Starting...\n\r");
+    // Init prev values to zero
+    for(int i = 0; i < 8; i++){
+		prev[i] = 0;
+	}
+
+    *(uint32_t*) A = 1 << RST;
+    usleep(1000000);
+    *(uint32_t*) A = 0;
+    while(1){
+    	// Shift values
+    	for(int i = 1; i < 8; i++){
+    		prev[i-1] = prev[i];
+    	}
+    	x = x_vals[counter];
+    	prev[7] = x;
+
+
+    	// Send next input
+		*(uint32_t*) A = (1 << VALID_IN) | x;
+    	//*(uint32_t*) A = 1 << RST;
+    	usleep(1000);
+    	*(uint32_t*) A = x;	// Drop valid_in
+    	//usleep(1000);
+
+    	xil_printf("Sent %d\n\r", x);
+
+    	// Wait till valid_out = 1
+    	valid_out = *(uint32_t*) B >> VALID_OUT;
+    	while(!valid_out){
+    		valid_out = *(uint32_t*) B >> VALID_OUT;
+    	}
+    	y = *(uint32_t*) B & 0x1ffff;
+
+    	// Calculate expected value
+    	expected = 0;
+    	for(int i = 0; i < 8; i++){
+    		expected += imp_resp[i]*prev[7 - i];
+    	}
+    	xil_printf("Received %d and expected %d\n\r", (int)y, (int)expected);
+    	xil_printf("Sanity check: %d\n\r", *(uint32_t*) C);
+    	usleep(2000000);
+    	counter++;
+    }
+
+    cleanup_platform();
+    return 0;
+}

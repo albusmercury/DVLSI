@@ -1,0 +1,14 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/src/control_unit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control_unit
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/src/fir_filter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fir_filter
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/hdl/fir_sup_ip_v1_0_S00_AXI.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fir_sup_ip_v1_0_S00_AXI
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/src/mac.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mac
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/src/ram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mlab_ram
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/src/rom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mlab_rom
+INFO: [VRFC 10-163] Analyzing VHDL file "c:/xilinx/vivado/2018.2/layouts/workspace/5th_exercise/ip_repo/fir_sup_ip_1.0/hdl/fir_sup_ip_v1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity fir_sup_ip_v1_0

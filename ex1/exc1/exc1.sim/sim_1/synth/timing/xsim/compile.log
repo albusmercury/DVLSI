@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Tasos/Desktop/exc1/exc1.sim/sim_1/synth/timing/xsim/dec3to8_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dec3to8
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Tasos/Desktop/exc1/exc1.srcs/sim_1/new/dec3to8_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity dec3to8_tb

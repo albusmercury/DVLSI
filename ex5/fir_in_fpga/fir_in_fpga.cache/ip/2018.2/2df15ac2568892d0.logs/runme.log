@@ -1,0 +1,407 @@
+
+*** Running vivado
+    with args -log fpga_fir_mem_ip_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fpga_fir_mem_ip_0_1.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source fpga_fir_mem_ip_0_1.tcl -notrace
+Command: synth_design -top fpga_fir_mem_ip_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24460 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 477.934 ; gain = 93.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'fpga_fir_mem_ip_0_1' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ip/fpga_fir_mem_ip_0_1/synth/fpga_fir_mem_ip_0_1.vhd:103]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S01_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fir_mem_ip_v1_0' declared at 'c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:5' bound to instance 'U0' of component 'fir_mem_ip_v1_0' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ip/fpga_fir_mem_ip_0_1/synth/fpga_fir_mem_ip_0_1.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'fir_mem_ip_v1_0' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:76]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S01_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S01_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fir_mem_ip_v1_0_S00_AXI' declared at 'c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:5' bound to instance 'fir_mem_ip_v1_0_S00_AXI_inst' of component 'fir_mem_ip_v1_0_S00_AXI' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'fir_mem_ip_v1_0_S00_AXI' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:223]
+INFO: [Synth 8-226] default block is never used [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:353]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'fir_mem_ip_v1_0_S00_AXI' (1#1) [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S00_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'fir_mem_ip_v1_0_S01_AXI' declared at 'c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:5' bound to instance 'fir_mem_ip_v1_0_S01_AXI_inst' of component 'fir_mem_ip_v1_0_S01_AXI' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'fir_mem_ip_v1_0_S01_AXI' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:86]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:223]
+INFO: [Synth 8-226] default block is never used [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:353]
+WARNING: [Synth 8-6014] Unused sequential element loc_addr_reg was removed.  [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:221]
+INFO: [Synth 8-256] done synthesizing module 'fir_mem_ip_v1_0_S01_AXI' (2#1) [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:86]
+	Parameter data_width bound to: 8 - type: integer 
+INFO: [Synth 8-637] synthesizing blackbox instance 'fir' of component 'fir_filter' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+INFO: [Synth 8-256] done synthesizing module 'fir_mem_ip_v1_0' (3#1) [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'fpga_fir_mem_ip_0_1' (4#1) [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ip/fpga_fir_mem_ip_0_1/synth/fpga_fir_mem_ip_0_1.vhd:103]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S01_AXI has unconnected port S_AXI_ARPROT[0]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design fir_mem_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.621 ; gain = 150.672
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[16] with 1st driver pin 'U0/fir/valid_out' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[16] with 2nd driver pin 'U0/fir/y[16]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.621 ; gain = 150.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 534.621 ; gain = 150.672
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraint will be written out.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 855.434 ; gain = 1.871
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 855.434 ; gain = 471.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 855.434 ; gain = 471.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 855.434 ; gain = 471.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 855.434 ; gain = 471.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 10    
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   4 Input     32 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module fir_mem_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+Module fir_mem_ip_v1_0_S01_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_awprot[2]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_awprot[1]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_awprot[0]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_arprot[2]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_arprot[1]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s00_axi_arprot[0]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_awprot[2]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_awprot[1]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_awprot[0]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_arprot[2]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_arprot[1]
+WARNING: [Synth 8-3331] design fpga_fir_mem_ip_0_1 has unconnected port s01_axi_arprot[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/fir_mem_ip_v1_0_S01_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/fir_mem_ip_v1_0_S00_AXI_inst/aw_en_reg )
+INFO: [Synth 8-3886] merging instance 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/aw_en_reg) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/aw_en_reg) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+INFO: [Synth 8-3332] Sequential element (U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module fpga_fir_mem_ip_0_1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 855.434 ; gain = 471.484
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 859.676 ; gain = 475.727
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 859.973 ; gain = 476.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[16] with 1st driver pin 'U0/fir/valid_out' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[16] with 2nd driver pin 'U0/fir/y[16]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[16] with 3rd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[16]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[15] with 1st driver pin 'U0/fir/y[15]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[15] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[15]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[14] with 1st driver pin 'U0/fir/y[14]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[14] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[14]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[13] with 1st driver pin 'U0/fir/y[13]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[13] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[13]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[12] with 1st driver pin 'U0/fir/y[12]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[12] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[12]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[11] with 1st driver pin 'U0/fir/y[11]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[11] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[11]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[10] with 1st driver pin 'U0/fir/y[10]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[10] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[10]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[9] with 1st driver pin 'U0/fir/y[9]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[9] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[9]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[8] with 1st driver pin 'U0/fir/y[8]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[8] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[8]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[7] with 1st driver pin 'U0/fir/y[7]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[7] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[7]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[6] with 1st driver pin 'U0/fir/y[6]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[6] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[6]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[5] with 1st driver pin 'U0/fir/y[5]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[5] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[5]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[4] with 1st driver pin 'U0/fir/y[4]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[4] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[4]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[3] with 1st driver pin 'U0/fir/y[3]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[3] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[3]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[2] with 1st driver pin 'U0/fir/y[2]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[2] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[2]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[1] with 1st driver pin 'U0/fir/y[1]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[1] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[1]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[0] with 1st driver pin 'U0/fir/y[0]' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0.vhd:215]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net s01_axi_rdata[0] with 2nd driver pin 'U0/fir_mem_ip_v1_0_S01_AXI_inst/axi_rdata_reg[0]/Q' [c:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.srcs/sources_1/bd/fpga/ipshared/e686/hdl/fir_mem_ip_v1_0_S01_AXI.vhd:129]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       17|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |fir_filter    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |fir_filter_bbox_0 |     1|
+|2     |LUT1              |     2|
+|3     |LUT2              |     2|
+|4     |LUT3              |     6|
+|5     |LUT4              |    40|
+|6     |LUT5              |     4|
+|7     |LUT6              |    66|
+|8     |FDRE              |   334|
+|9     |FDSE              |     4|
++------+------------------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |   476|
+|2     |  U0                             |fir_mem_ip_v1_0         |   476|
+|3     |    fir_mem_ip_v1_0_S00_AXI_inst |fir_mem_ip_v1_0_S00_AXI |   229|
+|4     |    fir_mem_ip_v1_0_S01_AXI_inst |fir_mem_ip_v1_0_S01_AXI |   229|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 35 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 872.535 ; gain = 167.773
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 872.535 ; gain = 488.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 27 Warnings, 37 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 884.652 ; gain = 512.234
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx/Vivado/2018.2/layouts/workspace/5th_exercise/fir_in_fpga/fir_in_fpga.runs/fpga_fir_mem_ip_0_1_synth_1/fpga_fir_mem_ip_0_1.dcp' has been generated.

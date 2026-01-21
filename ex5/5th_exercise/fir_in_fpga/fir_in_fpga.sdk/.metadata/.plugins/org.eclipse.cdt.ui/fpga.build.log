@@ -1,0 +1,18 @@
+22:35:44 **** Auto Build of configuration Debug for project fpga ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../fpga_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:54:11: error: invalid operands to binary * (have 'int' and 'uint32_t * {aka long unsigned int *}')
+ #define A *(uint32_t *) 0x4300000
+           ^
+../src/helloworld.c:86:6: note: in expansion of macro 'A'
+      A = (1 << VALID_IN) | x;
+      ^
+make: *** [src/helloworld.o] Error 1
+
+22:35:44 Build Finished (took 438ms)
+

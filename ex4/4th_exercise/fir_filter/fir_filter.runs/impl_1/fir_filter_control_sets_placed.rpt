@@ -1,0 +1,118 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon May  8 13:05:01 2023
+| Host         : LAPTOP-E10EM86U running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file fir_filter_control_sets_placed.rpt
+| Design       : fir_filter
+| Device       : xc7z007s
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    51 |
+| Unused register locations in slices containing registers |   276 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           45 |
+|      8 |            3 |
+|     14 |            1 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              28 |            4 |
+| No           | No                    | Yes                    |              76 |           31 |
+| No           | Yes                   | No                     |              30 |           15 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               6 |            3 |
+| Yes          | Yes                   | No                     |              16 |            3 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+|           Clock Signal          |       Enable Signal      |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+|  cu/ram_addr_reg[1]_LDC_i_1_n_0 |                          | cu/ram_addr_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  cu/ram_addr_reg[0]_LDC_i_1_n_0 |                          | cu/ram_addr_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  cu/ram_addr_reg[2]_LDC_i_1_n_0 |                          | cu/ram_addr_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+|  cu/res_reg[0]_P                |                          | cu/res_reg[0]_C                |                1 |              2 |
+|  cu/res_reg[7]_P                |                          | cu/res_reg[7]_C                |                1 |              2 |
+|  cu/res_reg[11]_P               |                          | cu/res_reg[11]_C               |                1 |              2 |
+|  cu/res_reg[4]_P                |                          | cu/res_reg[4]_C                |                1 |              2 |
+|  cu/res_reg[3]_P                |                          | cu/res_reg[3]_C                |                1 |              2 |
+|  cu/res_reg[2]_P                |                          | cu/res_reg[2]_C                |                1 |              2 |
+|  cu/res_reg[10]_P               |                          | cu/res_reg[10]_C               |                1 |              2 |
+|  cu/res_reg[5]_P                |                          | cu/res_reg[5]_C                |                1 |              2 |
+|  cu/res_reg[6]_P                |                          | cu/res_reg[6]_C                |                1 |              2 |
+|  cu/res_reg[8]_P                |                          | cu/res_reg[8]_C                |                1 |              2 |
+|  cu/res_reg[9]_P                |                          | cu/res_reg[9]_C                |                1 |              2 |
+|  cu/res_reg[1]_P                |                          | cu/res_reg[1]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[8]_P                |                1 |              2 |
+|  clk_IBUF_BUFG                  |                          | cu/ram_addr_reg[0]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG                  |                          | cu/ram_addr_reg[1]_LDC_i_2_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG                  |                          | cu/ram_addr_reg[2]_LDC_i_2_n_0 |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[11]_P               |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[9]_P                |                1 |              2 |
+|  clk_IBUF_BUFG                  | cu/ram_addr[2]_P_i_1_n_0 | cu/ram_addr_reg[1]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG                  | cu/ram_addr[2]_P_i_1_n_0 | cu/ram_addr_reg[0]_LDC_i_1_n_0 |                1 |              2 |
+|  clk_IBUF_BUFG                  | cu/ram_addr[2]_P_i_1_n_0 | cu/ram_addr_reg[2]_LDC_i_1_n_0 |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[1]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[5]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[0]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[0]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[7]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[8]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[10]_C               |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[11]_C               |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[4]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[2]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[3]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[7]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[4]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[2]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[6]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[10]_P               |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[5]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[9]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[6]_P                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[1]_C                |                1 |              2 |
+| ~clk_IBUF_BUFG                  |                          | cu/res_reg[3]_C                |                1 |              2 |
+|  clk_IBUF_BUFG                  | cu/index[3]_i_2_n_0      | cu/index                       |                1 |              8 |
+|  clk_IBUF_BUFG                  | valid_in_IBUF            | cu/last                        |                2 |              8 |
+|  clk_IBUF_BUFG                  |                          | ram/ram_we                     |                2 |              8 |
+| ~clk_IBUF_BUFG                  |                          | cu/init                        |                2 |             14 |
+|  clk_IBUF_BUFG                  | ram/ram_we               |                                |                2 |             16 |
+|  clk_IBUF_BUFG                  |                          |                                |                4 |             28 |
++---------------------------------+--------------------------+--------------------------------+------------------+----------------+
+
+

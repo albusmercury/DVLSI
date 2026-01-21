@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/src/control_unit.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/src/fir_filter.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/hdl/fir_sup_ip_v1_0_S00_AXI.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/src/mac.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/src/ram.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/src/rom.vhd" \
+"../../../../../../../ip_repo/fir_sup_ip_1.0/hdl/fir_sup_ip_v1_0.vhd" \
+
+# Do not sort compile order
+nosort

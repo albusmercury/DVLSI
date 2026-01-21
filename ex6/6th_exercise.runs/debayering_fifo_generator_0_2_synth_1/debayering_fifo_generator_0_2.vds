@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat May 27 16:22:53 2023
+# Process ID: 15696
+# Current directory: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fifo_generator_0_2_synth_1
+# Command line: vivado.exe -log debayering_fifo_generator_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source debayering_fifo_generator_0_2.tcl
+# Log file: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fifo_generator_0_2_synth_1/debayering_fifo_generator_0_2.vds
+# Journal file: C:/Xilinx/Vivado/2018.2/layouts/workspace/6th_exercise/6th_exercise.runs/debayering_fifo_generator_0_2_synth_1\vivado.jou
+#-----------------------------------------------------------
+source debayering_fifo_generator_0_2.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 327.188 ; gain = 97.820
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP debayering_fifo_generator_0_2, cache-ID = ec599d9702e8cf3d.
+INFO: [Common 17-206] Exiting Vivado at Sat May 27 16:23:21 2023...

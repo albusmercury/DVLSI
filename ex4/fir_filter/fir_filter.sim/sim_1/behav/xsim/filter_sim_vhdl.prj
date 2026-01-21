@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../fir_filter.srcs/sources_1/new/control_unit.vhd" \
+"../../../../fir_filter.srcs/sources_1/new/fir_filter.vhd" \
+"../../../../fir_filter.srcs/sources_1/new/mac.vhd" \
+"../../../../fir_filter.srcs/sources_1/new/ram.vhd" \
+"../../../../fir_filter.srcs/sources_1/new/rom.vhd" \
+"../../../../fir_filter.srcs/sim_1/new/sim_fir_filter.vhd" \
+
+# Do not sort compile order
+nosort

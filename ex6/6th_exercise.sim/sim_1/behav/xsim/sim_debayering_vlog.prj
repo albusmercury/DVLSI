@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_0/sim/debayering_fifo_generator_0_0.v" \
+"../../../../6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_1/sim/debayering_fifo_generator_0_1.v" \
+"../../../../6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_2/sim/debayering_fifo_generator_0_2.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

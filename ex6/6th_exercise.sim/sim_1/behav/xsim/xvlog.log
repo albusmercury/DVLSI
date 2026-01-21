@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpres/Desktop/6th_exercise/6th_exercise/6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_0/sim/debayering_fifo_generator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debayering_fifo_generator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpres/Desktop/6th_exercise/6th_exercise/6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_1/sim/debayering_fifo_generator_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debayering_fifo_generator_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpres/Desktop/6th_exercise/6th_exercise/6th_exercise.ip_user_files/bd/debayering/ip/debayering_fifo_generator_0_2/sim/debayering_fifo_generator_0_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debayering_fifo_generator_0_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mpres/Desktop/6th_exercise/6th_exercise/6th_exercise.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

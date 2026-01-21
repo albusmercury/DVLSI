@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Mar 24 09:51:23 2023
+# Process ID: 15196
+# Current directory: C:/Users/mpres/Desktop/ΗΜΜΥ/4ο έτος/8o εξάμηνο/Ψηφιακά Συστήματα VLSI/1η ’σκηση/exc1/exc1.runs/synth_1
+# Command line: vivado.exe -log dec3to8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dec3to8.tcl
+# Log file: C:/Users/mpres/Desktop/ΗΜΜΥ/4ο έτος/8o εξάμηνο/Ψηφιακά Συστήματα VLSI/1η ’σκηση/exc1/exc1.runs/synth_1/dec3to8.vds
+# Journal file: C:/Users/mpres/Desktop/ΗΜΜΥ/4ο έτος/8o εξάμηνο/Ψηφιακά Συστήματα VLSI/1η ’σκηση/exc1/exc1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source dec3to8.tcl -notrace

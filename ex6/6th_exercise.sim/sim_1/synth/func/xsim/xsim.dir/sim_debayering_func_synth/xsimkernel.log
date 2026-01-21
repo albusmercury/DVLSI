@@ -1,0 +1,4 @@
+Running: xsim.dir/sim_debayering_func_synth/xsimk.exe -simmode gui -wdb sim_debayering_func_synth.wdb -simrunnum 0 -socket 64640
+Design successfully loaded
+Design Loading Memory Usage: 10904 KB (Peak: 10904 KB)
+Design Loading CPU Usage: 92 ms
